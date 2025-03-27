@@ -1,4 +1,3 @@
-<!-- header -->
 <?php
 $phone = "+01 123455678990";
 $email = "demo@gmail.com";

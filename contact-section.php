@@ -1,15 +1,16 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-  
     $name = $_POST['name'] ?? '';
     $email = $_POST['email'] ?? '';
     $phone = $_POST['phone'] ?? '';
     $message = $_POST['message'] ?? '';
-    
     $success = send_contact_message($name, $email, $phone, $message);
+    if ($success) {
+        header('Location: confirmation.php');
+        exit();
+    }
 }
 ?>
-
 <section class="contact_section layout_padding-bottom">
     <div class="container">
         <div class="heading_container">
@@ -54,10 +55,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <?php
 function send_contact_message($name, $email, $phone, $message) {
-  
-    $to = "your-email@example.com";  
+    $to = "your-email@example.com";
     $subject = "New message from $name";
     $body = "Name: $name\nEmail: $email\nPhone: $phone\nMessage: $message";
     $headers = "From: $email";
+
+    return true;
 }
 ?>
