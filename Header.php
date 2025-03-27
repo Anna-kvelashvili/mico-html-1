@@ -1,5 +1,21 @@
-<?php include('functions.php'); ?>
-
+<!-- header -->
+<?php
+$phone = "+01 123455678990";
+$email = "demo@gmail.com";
+$location = "Your Location Address"; 
+$nav_links = [
+  'home' => 'index.php',
+  'about' => 'about.php',
+  'treatment' => 'treatment.php',
+  'doctor' => 'doctor.php',
+  'testimonial' => 'testimonial.php',
+  'contact' => 'contact.php'
+];
+$auth_links = [
+  'login' => 'login.php',
+  'signup' => 'signup.php'
+];
+?>
 <header class="header_section">
   <div class="header_top">
     <div class="container">

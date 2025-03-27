@@ -1,5 +1,29 @@
-<?php include('functions.php'); ?>
-
+<!-- slider -->
+<?php
+$slider_items = [
+    [
+        'title' => 'Mico',
+        'subtitle' => 'Hospital',
+        'description' => 'when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to',
+        'img_src' => 'images/slider-img.jpg',
+        'link' => '#'
+    ],
+    [
+        'title' => 'Mico',
+        'subtitle' => 'Hospital',
+        'description' => 'when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to',
+        'img_src' => 'images/slider-img.jpg',
+        'link' => '#'
+    ],
+    [
+        'title' => 'Mico',
+        'subtitle' => 'Hospital',
+        'description' => 'when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to',
+        'img_src' => 'images/slider-img.jpg',
+        'link' => '#'
+    ]
+];
+?>
 <section class="slider_section">
   <div class="dot_design">
     <img src="images/dots.png" alt="">
