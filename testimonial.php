@@ -34,21 +34,15 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-</head>
-<body>
 
+</head>
+
+<body class="sub_page">
 
   <div class="hero_area">
   <?php include('header.php'); ?>
-  <?php include('slider.php'); ?>
   </div>
-
- <?php include('book-section.php'); ?>
- <?php include('about-section.php'); ?>
- <?php include('treatment-section.php'); ?>
- <?php include('team-section.php'); ?>
- <?php include('client-section.php'); ?>
- <?php include('contact-section.php'); ?>
+  <?php include('client-section.php'); ?>
 <?php include('info.php');?>
 <?php include('footer.php');?>
 

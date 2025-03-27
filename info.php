@@ -49,12 +49,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="info_links">
                         <h5>Useful link</h5>
                         <div class="info_links_menu">
-                            <a class="active" href="index.html">Home</a>
-                            <a href="about.html">About</a>
-                            <a href="treatment.html">Treatment</a>
-                            <a href="doctor.html">Doctors</a>
-                            <a href="testimonial.html">Testimonial</a>
-                            <a href="contact.html">Contact us</a>
+                            <a class="active" href="index.php">Home</a>
+                            <a href="about.php">About</a>
+                            <a href="treatment.php">Treatment</a>
+                            <a href="doctor.php">Doctors</a>
+                            <a href="testimonial.php">Testimonial</a>
+                            <a href="contact.php">Contact us</a>
                         </div>
                     </div>
                 </div>

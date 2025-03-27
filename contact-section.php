@@ -1,14 +1,15 @@
-<!-- contact -->
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  
     $name = $_POST['name'] ?? '';
     $email = $_POST['email'] ?? '';
     $phone = $_POST['phone'] ?? '';
     $message = $_POST['message'] ?? '';
-
+    
     $success = send_contact_message($name, $email, $phone, $message);
 }
 ?>
+
 <section class="contact_section layout_padding-bottom">
     <div class="container">
         <div class="heading_container">
@@ -17,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="row">
             <div class="col-md-7">
                 <div class="form_container">
-                    <form action="contact.php" method="POST">
+                    <form action="index.php" method="POST">
                         <div>
                             <input type="text" name="name" placeholder="Full Name" required />
                         </div>
@@ -50,3 +51,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </div>
 </section>
+
+<?php
+function send_contact_message($name, $email, $phone, $message) {
+  
+    $to = "your-email@example.com";  
+    $subject = "New message from $name";
+    $body = "Name: $name\nEmail: $email\nPhone: $phone\nMessage: $message";
+    $headers = "From: $email";
+}
+?>

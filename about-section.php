@@ -22,7 +22,7 @@ $aboutImage = "images/about-img.jpg";
           <p>
             <?php echo $aboutDescription; ?>
           </p>
-          <a href="">
+          <a href="./about.php">
             Read More
           </a>
         </div>
